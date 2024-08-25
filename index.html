@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="main-header">Weather App</h1>
+    <div id="weather">
+        <div class="input-group" id="locationInput">
+            <input type="text" id="location" placeholder="Enter a location">
+            <button onclick="getWeatherByInput()">Get Weather</button>
+        </div>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="weatherInfo" class="weather-info"></div>
+        <div id="forecast" class="forecast-info"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
